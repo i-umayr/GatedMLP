@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================
+         PROJECT INFO
+         ============================================ -->
+    <title>Gated MLP for Human Motion Prediction | DIIM Lab</title>
+    <meta
+      name="description"
+      content="A lightweight AI system that predicts human movement with 9% better accuracy while using 9x less computing power than existing methods."
+    />
+    <meta name="author" content="DIIM Lab Research Team" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/project-styles.css" />
+
+    <!-- ============================================
+         MAIN WEBSITE URL - CHANGE HERE ONLY
+         ============================================ -->
+    <script>
+      const MAIN_SITE_URL = "https://i-umayr.github.io/DigitalTwinWebsite";
+    </script>
+  </head>
+  <body>
+    <!-- ==========================================
+         NAVIGATION (Don't modify)
+         ========================================== -->
+    <nav class="nav">
+      <div class="nav__container">
+        <a href="#" class="nav__logo" data-link="home">
+          <div class="nav__logo-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white" />
+              <path
+                d="M2 17L12 22L22 17"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 12L12 17L22 12"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          DIIM Lab
+        </a>
+        <ul class="nav__links">
+          <li>
+            <a href="#" class="nav__link" data-link="projects">All Projects</a>
+          </li>
+          <li><a href="#" class="nav__link" data-link="contact">Contact</a></li>
+          <li>
+            <a
+              href="https://sy1990.github.io/diim-lab/"
+              target="_blank"
+              class="nav__link"
+              >Main Lab Site</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ==========================================
+         PROJECT HERO
+         ========================================== -->
+    <section class="project-hero">
+      <div class="project-hero__container">
+        <a href="#" class="project-hero__back" data-link="projects">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back to All Projects
+        </a>
+
+        <span class="project-hero__tag">Human-Robot Interaction</span>
+
+        <h1 class="project-hero__title">
+          Predicting Human Movement for Safer Robots
+        </h1>
+
+        <p class="project-hero__author">
+          By <strong>DIIM Lab</strong> · Published in
+          <strong>NPJ Advanced Manufacturing</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECT CONTENT
+         ========================================== -->
+    <article class="project-content">
+      <div class="project-content__container">
+        <!-- FEATURED IMAGE -->
+        <div class="project-content__image">
+          <img
+            src="images/hero.png"
+            alt="Gated MLP architecture for human motion prediction"
+          />
+        </div>
+
+        <!-- THE PROBLEM -->
+        <section class="project-section">
+          <h2>The Problem</h2>
+          <p>
+            As robots become more common in factories, warehouses, and
+            hospitals, they need to work safely alongside people. To do this,
+            robots must predict where humans will move next — whether someone is
+            reaching for a tool, walking across a room, or picking up an object.
+          </p>
+          <p>
+            Current systems that predict human movement are either too slow for
+            real-time use or require expensive, powerful computers. This limits
+            their use in practical settings like manufacturing floors, assistive
+            devices, and self-driving vehicles where split-second decisions
+            matter.
+          </p>
+        </section>
+
+        <!-- OUR SOLUTION -->
+        <section class="project-section">
+          <h2>Our Solution</h2>
+          <p>
+            We developed a simple, lightweight AI system that predicts human
+            body movement up to one second into the future. Unlike existing
+            approaches that use complex, resource-heavy designs, our method uses
+            a streamlined architecture that runs efficiently on standard
+            hardware.
+          </p>
+          <p>
+            The system analyzes a person's recent movements — tracking 21 body
+            joints over the past 1.7 seconds — to forecast where they'll be
+            next. It can also incorporate eye gaze data, since people typically
+            look where they're about to move.
+          </p>
+        </section>
+
+        <!-- KEY OUTCOMES -->
+        <section class="project-section">
+          <h2>Key Outcomes</h2>
+          <ul>
+            <li>
+              <strong>9% More Accurate:</strong> Our system predicts human
+              movement more precisely than the previous best method (69.1mm vs
+              75.9mm average error)
+            </li>
+            <li>
+              <strong>9× Lighter:</strong> Uses only 0.20 million parameters
+              compared to 1.86 million — making it practical for real-world
+              deployment
+            </li>
+            <li>
+              <strong>Real-Time Ready:</strong> The lightweight design enables
+              use on mobile robots, wearable devices, and embedded systems with
+              limited computing power
+            </li>
+            <li>
+              <strong>Validated Across People:</strong> Tested on 6 different
+              individuals performing real tasks, proving it works for different
+              body types and movement styles
+            </li>
+          </ul>
+        </section>
+
+        <!-- APPLICATIONS -->
+        <section class="project-section">
+          <h2>Applications</h2>
+          <p>This research can be applied in several areas:</p>
+          <ul>
+            <li>
+              <strong>Manufacturing & Warehouses:</strong> Robots can anticipate
+              worker movements to avoid collisions and coordinate tasks
+              smoothly, improving both safety and efficiency
+            </li>
+            <li>
+              <strong>Healthcare & Assistive Robotics:</strong> Mobility aids
+              and rehabilitation robots can better support patients by
+              predicting their intended movements and providing timely
+              assistance
+            </li>
+            <li>
+              <strong>Autonomous Vehicles:</strong> Self-driving cars and
+              delivery robots can better predict pedestrian paths, enabling
+              safer navigation in crowded environments
+            </li>
+          </ul>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="project-section">
+          <h2>Gallery</h2>
+          <div class="project-gallery">
+            <div class="project-gallery__item">
+              <img
+                src="images/gallery-1.png"
+                alt="Gated MLP architecture diagram"
+              />
+            </div>
+            <div class="project-gallery__item">
+              <img
+                src="images/gallery-2.png"
+                alt="21 body joints visualization"
+              />
+            </div>
+            <div class="project-gallery__item">
+              <img
+                src="images/gallery-3.png"
+                alt="Performance comparison chart"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- PUBLICATION
+        <section class="project-section">
+          <h2>Read the Paper</h2>
+          <p>
+            Interested in the technical details? Read the full research paper:
+          </p>
+          <div class="project-publications">
+            <a
+              href="https://doi.org/YOUR_DOI"
+              class="project-publication"
+              target="_blank"
+            >
+              <div class="project-publication__icon">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14,2 14,8 20,8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10,9 9,9 8,9" />
+                </svg>
+              </div>
+              <div class="project-publication__content">
+                <h4>
+                  Efficient Multimodal Human Motion Prediction: A Gated MLP
+                  Approach for Gaze-Pose Integration
+                </h4>
+                <p>DIIM Lab Research Team · NPJ Advanced Manufacturing, 2025</p>
+              </div>
+              <svg
+                class="project-publication__arrow"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                />
+                <polyline points="15,3 21,3 21,9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </div>
+        </section> -->
+
+        <!-- COLLABORATION -->
+        <!-- <section class="project-section">
+          <h2>Interested in Collaborating?</h2>
+          <p>
+            We're looking for industry partners and collaborators to help bring
+            this research into real-world applications. If you're interested in
+            working with us, please
+            <a href="#" data-link="contact">get in touch</a>.
+          </p>
+        </section>
+      </div>
+    </article> -->
+
+    <!-- ==========================================
+         FOOTER (Don't modify)
+         ========================================== -->
+    <footer class="footer">
+      <div class="footer__content">
+        <a href="#" class="footer__logo" data-link="home">
+          <div class="nav__logo-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white" />
+              <path
+                d="M2 17L12 22L22 17"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 12L12 17L22 12"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          DIIM Lab
+        </a>
+        <div class="footer__links">
+          <a
+            href="https://sy1990.github.io/diim-lab/"
+            target="_blank"
+            class="footer__link"
+            >Main Lab Website</a
+          >
+          <a
+            href="https://www.youtube.com/channel/UCh6oN-DiD9h4lSHXrCd7Ccg"
+            target="_blank"
+            class="footer__link"
+            >YouTube Channel</a
+          >
+          <a
+            href="https://www.uoguelph.ca/engineering/"
+            target="_blank"
+            class="footer__link"
+            >College of Engineering</a
+          >
+          <a
+            href="https://www.uoguelph.ca/"
+            target="_blank"
+            class="footer__link"
+            >University of Guelph</a
+          >
+        </div>
+        <div class="footer__copy">
+          © 2025 Design Innovation and Intelligent Manufacturing Lab. University
+          of Guelph.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- ==========================================
+         URL RESOLVER - Sets all dynamic links
+         Uses MAIN_SITE_URL defined at top of page
+         ========================================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const linkMap = {
+          home: "/",
+          projects: "/#projects",
+          contact: "/#contact",
+        };
+
+        document.querySelectorAll("[data-link]").forEach(function (el) {
+          const linkType = el.getAttribute("data-link");
+          if (linkMap[linkType]) {
+            el.href = MAIN_SITE_URL + linkMap[linkType];
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

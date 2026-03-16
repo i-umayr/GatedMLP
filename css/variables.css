@@ -1,0 +1,97 @@
+/* ============================================
+   DIIM Digital Twin Technologies
+   Configuration & Variables
+   
+   ⚡ QUICK CUSTOMIZATION GUIDE:
+   - Change colors: Edit the "Primary Colors" section
+   - Change fonts: Edit the "Typography" section
+   - Change spacing: Edit the "Spacing" section
+   ============================================ */
+
+:root {
+    /* ==========================================
+       PRIMARY COLORS
+       Change these to update the entire site
+       ========================================== */
+    --primary: #0ea5e9;           /* Main brand color */
+    --primary-dark: #0284c7;      /* Darker shade (hover states) */
+    --primary-light: #38bdf8;     /* Lighter shade (accents) */
+    --accent: #06b6d4;            /* Secondary accent */
+    
+    
+    /* ==========================================
+       GRADIENTS
+       Used in buttons, hero, badges
+       ========================================== */
+    --gradient-start: #0ea5e9;
+    --gradient-end: #06b6d4;
+    --gradient-primary: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    
+    
+    /* ==========================================
+       TEXT COLORS
+       ========================================== */
+    --text-primary: #0f172a;      /* Headings, main text */
+    --text-secondary: #475569;    /* Body text, descriptions */
+    --text-muted: #94a3b8;        /* Subtle text, labels */
+    --text-white: #ffffff;        /* Text on dark backgrounds */
+    
+    
+    /* ==========================================
+       BACKGROUND COLORS
+       ========================================== */
+    --bg-white: #ffffff;          /* Main background */
+    --bg-light: #f8fafc;          /* Section backgrounds */
+    --bg-dark: #0f172a;           /* Footer, dark sections */
+    --bg-card: #ffffff;           /* Card backgrounds */
+    
+    
+    /* ==========================================
+       BORDERS & SHADOWS
+       ========================================== */
+    --border: #e2e8f0;
+    --border-hover: rgba(14, 165, 233, 0.3);
+    
+    --shadow-sm: 0 1px 20px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 25px 50px rgba(0, 0, 0, 0.1);
+    --shadow-primary: 0 4px 15px rgba(14, 165, 233, 0.3);
+    --shadow-primary-hover: 0 6px 25px rgba(14, 165, 233, 0.4);
+    
+    
+    /* ==========================================
+       SPACING
+       ========================================== */
+    --section-padding: 6rem 2rem;
+    --section-padding-mobile: 4rem 1.5rem;
+    --container-max-width: 1200px;
+    --container-narrow: 900px;
+    --container-wide: 1400px;
+    
+    
+    /* ==========================================
+       BORDER RADIUS
+       ========================================== */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-full: 100px;
+    
+    
+    /* ==========================================
+       TRANSITIONS
+       ========================================== */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.4s ease;
+    --transition-animation: 0.6s ease;
+    
+    
+    /* ==========================================
+       TYPOGRAPHY
+       ========================================== */
+    --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-size-base: 1rem;
+    --line-height-base: 1.6;
+}

@@ -1,0 +1,500 @@
+/* ============================================
+   DIIM Lab - Student Project Page Styles
+   
+   This is a standalone CSS file for student project pages.
+   It includes all necessary styles to match the main DIIM site.
+   
+   DO NOT MODIFY this file - it ensures consistency
+   across all student project pages.
+   ============================================ */
+
+
+/* --------------------------------------------
+   Reset & Base
+   -------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+    background: var(--bg-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* --------------------------------------------
+   Navigation
+   -------------------------------------------- */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+    transition: all 0.3s ease;
+}
+
+.nav--scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav__logo-icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__logo-icon svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
+
+.nav__links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav__link {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+    color: var(--primary);
+}
+
+
+/* --------------------------------------------
+   Project Hero
+   -------------------------------------------- */
+.project-hero {
+    padding: 10rem 2rem 4rem;
+    background: var(--bg-light);
+}
+
+.project-hero__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-hero__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.2s ease;
+}
+
+.project-hero__back:hover {
+    color: var(--primary);
+}
+
+.project-hero__back svg {
+    width: 18px;
+    height: 18px;
+}
+
+.project-hero__tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: rgba(14, 165, 233, 0.1);
+    color: var(--primary);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.project-hero__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.project-hero__author {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.project-hero__author strong {
+    color: var(--text-primary);
+}
+
+
+/* --------------------------------------------
+   Project Content
+   -------------------------------------------- */
+.project-content {
+    padding: 4rem 2rem 6rem;
+}
+
+.project-content__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-content__image {
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project-content__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-content__image-placeholder {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.project-content__image-placeholder svg {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* --------------------------------------------
+   Project Sections
+   -------------------------------------------- */
+.project-section {
+    margin-bottom: 3rem;
+}
+
+.project-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+}
+
+.project-section p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.project-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+}
+
+.project-section li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.project-section li strong {
+    color: var(--text-primary);
+}
+
+
+/* --------------------------------------------
+   Project Gallery
+   -------------------------------------------- */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project-gallery__item {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.project-gallery__item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-gallery__item .project-content__image-placeholder {
+    height: 200px;
+}
+
+
+/* --------------------------------------------
+   Project Video
+   -------------------------------------------- */
+.project-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--bg-dark);
+}
+
+.project-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------------------------------------
+   Project Publications
+   -------------------------------------------- */
+.project-publications {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-publication {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.project-publication:hover {
+    border-color: rgba(14, 165, 233, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.project-publication__icon {
+    width: 48px;
+    height: 48px;
+    background: var(--bg-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.project-publication__icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary);
+}
+
+.project-publication__content {
+    flex: 1;
+}
+
+.project-publication__content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.project-publication__content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.project-publication__arrow {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-muted);
+    flex-shrink: 0;
+    transition: stroke 0.2s ease;
+}
+
+.project-publication:hover .project-publication__arrow {
+    stroke: var(--primary);
+}
+
+
+/* --------------------------------------------
+   Footer
+   -------------------------------------------- */
+.footer {
+    background: var(--bg-dark);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 3rem 2rem;
+}
+
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer__links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+    color: #ffffff;
+}
+
+.footer__copy {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+}
+
+
+/* --------------------------------------------
+   Animations
+   -------------------------------------------- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* --------------------------------------------
+   Responsive
+   -------------------------------------------- */
+@media (max-width: 768px) {
+    .nav {
+        padding: 1rem;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .project-hero {
+        padding: 8rem 1.5rem 3rem;
+    }
+
+    .project-content {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+    .project-content__image-placeholder {
+        height: 250px;
+    }
+
+    .project-publication {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .project-publication__arrow {
+        display: none;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
